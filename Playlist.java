@@ -9,6 +9,9 @@ public class Playlist {
         this.songs = new ArrayList<>();
     }
 
+    public void setPlaylistName(String name) {
+        this.name = name;
+    }
     public void addSong(Song song) {
         songs.add(song);
     }
