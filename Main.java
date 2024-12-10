@@ -1,14 +1,14 @@
 
 public class Main {
+
     public static void main(String[] args) {
 
-        // Create an array of Song objects
-        Song[] songsArray = new Song[3];
+        Song[] songsArray = new Song[4];
 
-        // Initialize songs
         songsArray[0] = new Song("Shape of You", "Ed Sheeran", "Pop");
         songsArray[1] = new Song("Blinding Lights", "The Weeknd", "R&B");
         songsArray[2] = new Song("Dynamite", "BTS", "Disco");
+        songsArray[3] = new Song("Delicate" , "Taylor Swift",  "Country");
 
 
         Playlist playlist = new Playlist("My Favorites");
@@ -16,5 +16,12 @@ public class Main {
             playlist.addSong(song);
         }
         playlist.displayPlaylist();
+
+        for (int i = 0; i < songsArray.length; i++) {
+            songsArray[i] = null; 
+        }
+
+        playlist = null; 
+
     }
 }
