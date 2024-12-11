@@ -27,7 +27,7 @@ public class Playlist {
     public void displayPlaylist() {
         System.out.println("Playlist: " + name);
         for (Song song : songs) {
-            song.displaySongDetails();
+            song.displayDetails();
         }
     }
 
