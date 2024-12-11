@@ -1,6 +1,6 @@
 public class Podcast extends MediaItem {
     private String host;
-    private int duration; 
+    private int duration;
 
     public Podcast(String title, String host, String genre, int duration) {
         super(title, genre);

@@ -1,11 +1,7 @@
 public abstract class MediaItem {
+    
     private String title;
     private String genre;
-
-    public MediaItem() {
-        this.title = "Unknown Title";
-        this.genre = "Unknown Genre";
-    }
 
     public MediaItem(String title, String genre) {
         this.title = title;

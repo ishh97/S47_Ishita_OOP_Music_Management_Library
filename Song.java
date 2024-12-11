@@ -4,7 +4,7 @@ public class Song extends MediaItem {
     private static int songCounter = 0;
 
     public Song() {
-        super();
+        super("Unknown Title", "Unknown Genre");
         this.artist = "Unknown Artist";
         songCounter++;
         System.out.println("Default Song Constructor Called");
@@ -27,18 +27,10 @@ public class Song extends MediaItem {
 
     @Override
     public void displayDetails() {
-        System.out.println("Title: " + getTitle() + ", Artist: " + artist + ", Genre: " + getGenre());
-    }
-
-    public void displayDetails(String message) {
-        System.out.println("Title: " + getTitle() + ", Artist: " + artist + ", Genre: " + getGenre() + ", Message: " + message);
+        System.out.println("Song Title: " + getTitle() + ", Artist: " + artist + ", Genre: " + getGenre());
     }
 
     public static void displayTotalSongs() {
         System.out.println("Total Songs Created: " + songCounter);
-    }
-
-    public void cleanup() {
-        System.out.println("Cleaning up resources for Song: " + getTitle());
     }
 }
