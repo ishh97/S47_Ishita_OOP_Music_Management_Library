@@ -9,8 +9,11 @@ public class Playlist {
     public Playlist(String name) {
         this.name = name;
         this.songs = new ArrayList<>();
-
         playlistCount++;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void setPlaylistName(String name) {
