@@ -24,5 +24,5 @@ public abstract class MediaItem {
         this.genre = genre;
     }
 
-    public abstract void displayDetails();
+    public abstract void displayDetails(); 
 }

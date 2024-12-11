@@ -1,6 +1,6 @@
 public class Podcast extends MediaItem {
     private String host;
-    private int duration;
+    private int duration; 
 
     public Podcast(String title, String host, String genre, int duration) {
         super(title, genre);
@@ -26,6 +26,6 @@ public class Podcast extends MediaItem {
 
     @Override
     public void displayDetails() {
-        System.out.println("Podcast Title: " + getTitle() + ", Host: " + host + ", Genre: " + getGenre() + ", Duration: " + duration + " minutes");
+        PodcastDisplay.displayPodcastDetails(this);
     }
 }

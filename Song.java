@@ -25,12 +25,12 @@ public class Song extends MediaItem {
         this.artist = artist;
     }
 
-    @Override
-    public void displayDetails() {
-        System.out.println("Song Title: " + getTitle() + ", Artist: " + artist + ", Genre: " + getGenre());
-    }
-
     public static void displayTotalSongs() {
         System.out.println("Total Songs Created: " + songCounter);
+    }
+
+    @Override
+    public void displayDetails() {
+        SongDisplay.displaySongDetails(this);
     }
 }
