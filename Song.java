@@ -30,6 +30,10 @@ public class Song extends MediaItem {
         System.out.println("Title: " + getTitle() + ", Artist: " + artist + ", Genre: " + getGenre());
     }
 
+    public void displayDetails(String message) {
+        System.out.println("Title: " + getTitle() + ", Artist: " + artist + ", Genre: " + getGenre() + ", Message: " + message);
+    }
+
     public static void displayTotalSongs() {
         System.out.println("Total Songs Created: " + songCounter);
     }
