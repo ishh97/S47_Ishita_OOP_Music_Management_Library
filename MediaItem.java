@@ -2,6 +2,11 @@ public abstract class MediaItem {
     private String title;
     private String genre;
 
+    public MediaItem() {
+        this.title = "Unknown Title";
+        this.genre = "Unknown Genre";
+    }
+
     public MediaItem(String title, String genre) {
         this.title = title;
         this.genre = genre;
@@ -11,12 +16,12 @@ public abstract class MediaItem {
         return title;
     }
 
-    public String getGenre() {
-        return genre;
-    }
-
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getGenre() {
+        return genre;
     }
 
     public void setGenre(String genre) {
