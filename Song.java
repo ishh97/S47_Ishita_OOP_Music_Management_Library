@@ -13,20 +13,35 @@ public class Song {
         songCounter++;
     }
 
-    public String displaySongDetails() {
-        System.out.println("Title: " + title + ", Artist: " + artist + ", Genre: " + genre);
-        return "";
-    }
-
     public String getTitle() {
         return title;
     }
 
-    public static void displayTotalSongs() {
-        System.out.println("Total Songs Created: " + songCounter);
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public static int getSongCounter() {
-        return songCounter;
+    public String getArtist() {
+        return artist;
+    }
+
+    public void setArtist(String artist) {
+        this.artist = artist;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+    public void displaySongDetails() {
+        System.out.println("Title: " + title + ", Artist: " + artist + ", Genre: " + genre);
+    }
+
+    public static void displayTotalSongs() {
+        System.out.println("Total Songs Created: " + songCounter);
     }
 }
