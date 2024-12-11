@@ -1,24 +1,13 @@
-public class Song {
-    private String title;
+public class Song extends MediaItem {
     private String artist;
-    private String genre;
 
-    private static int songCounter = 0;
+    private static int songCounter = 0; 
 
     public Song(String title, String artist, String genre) {
-        this.title = title;
+        super(title, genre); 
         this.artist = artist;
-        this.genre = genre;
 
         songCounter++;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
     }
 
     public String getArtist() {
@@ -29,16 +18,9 @@ public class Song {
         this.artist = artist;
     }
 
-    public String getGenre() {
-        return genre;
-    }
-
-    public void setGenre(String genre) {
-        this.genre = genre;
-    }
-
-    public void displaySongDetails() {
-        System.out.println("Title: " + title + ", Artist: " + artist + ", Genre: " + genre);
+    @Override
+    public void displayDetails() {
+        System.out.println("Title: " + getTitle() + ", Artist: " + artist + ", Genre: " + getGenre());
     }
 
     public static void displayTotalSongs() {
